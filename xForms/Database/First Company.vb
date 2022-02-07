@@ -8,12 +8,16 @@
 
     Private Sub btnCreate_Click(sender As Object, e As EventArgs) Handles btnCreate.Click
         Cursor = Cursors.WaitCursor
-        ActiveCompany.CreateFirstCompany(txtShortName.Text, txtFullName.Text)
+        Try
+            ActiveCompany.CreateFirstCompany(txtShortName.Text)
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
         Cursor = Cursors.Default
         DialogResult = DialogResult.Yes
     End Sub
 
-    Private Sub txtFullName_KeyDown(sender As Object, e As KeyEventArgs) Handles txtShortName.KeyDown, txtFullName.KeyDown
+    Private Sub txtFullName_KeyDown(sender As Object, e As KeyEventArgs) Handles txtShortName.KeyDown
         Select Case e.KeyCode
             Case Keys.Escape
                 e.SuppressKeyPress = True

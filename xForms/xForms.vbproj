@@ -81,6 +81,13 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clients\Clients.vb" />
+    <Compile Include="Clients\Delete Client.Designer.vb">
+      <DependentUpon>Delete Client.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Clients\Delete Client.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Common.vb" />
     <Compile Include="Database\Database.vb" />
     <Compile Include="Database\First Admin.Designer.vb">
@@ -126,6 +133,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Clients\Delete Client.resx">
+      <DependentUpon>Delete Client.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Database\First Admin.resx">
       <DependentUpon>First Admin.vb</DependentUpon>
     </EmbeddedResource>

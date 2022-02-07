@@ -101,6 +101,7 @@ Partial Class frmFirstAdmin
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.Size = New System.Drawing.Size(200, 22)
         Me.txtPassword.TabIndex = 30
+        Me.txtPassword.UseSystemPasswordChar = True
         '
         'Label4
         '
@@ -117,6 +118,7 @@ Partial Class frmFirstAdmin
         Me.txtConfirm.Name = "txtConfirm"
         Me.txtConfirm.Size = New System.Drawing.Size(200, 22)
         Me.txtConfirm.TabIndex = 40
+        Me.txtConfirm.UseSystemPasswordChar = True
         '
         'Label5
         '

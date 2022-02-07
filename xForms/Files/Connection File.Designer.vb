@@ -54,6 +54,7 @@ Partial Class frmConnectionFile
         Me.txtTitle.Name = "txtTitle"
         Me.txtTitle.Size = New System.Drawing.Size(230, 22)
         Me.txtTitle.TabIndex = 1
+        Me.txtTitle.Text = "server"
         '
         'txtServerAddress
         '
@@ -61,6 +62,7 @@ Partial Class frmConnectionFile
         Me.txtServerAddress.Name = "txtServerAddress"
         Me.txtServerAddress.Size = New System.Drawing.Size(230, 22)
         Me.txtServerAddress.TabIndex = 3
+        Me.txtServerAddress.Text = "localhost"
         '
         'Label2
         '
@@ -77,6 +79,7 @@ Partial Class frmConnectionFile
         Me.txtMySQLUsername.Name = "txtMySQLUsername"
         Me.txtMySQLUsername.Size = New System.Drawing.Size(230, 22)
         Me.txtMySQLUsername.TabIndex = 5
+        Me.txtMySQLUsername.Text = "magmat32remoter"
         '
         'Label3
         '
@@ -93,6 +96,7 @@ Partial Class frmConnectionFile
         Me.txtMySQLPassword.Name = "txtMySQLPassword"
         Me.txtMySQLPassword.Size = New System.Drawing.Size(230, 22)
         Me.txtMySQLPassword.TabIndex = 7
+        Me.txtMySQLPassword.Text = "pErMOOter4$6^5%"
         Me.txtMySQLPassword.UseSystemPasswordChar = True
         '
         'Label4
@@ -110,6 +114,7 @@ Partial Class frmConnectionFile
         Me.txtConfirmPassword.Name = "txtConfirmPassword"
         Me.txtConfirmPassword.Size = New System.Drawing.Size(230, 22)
         Me.txtConfirmPassword.TabIndex = 9
+        Me.txtConfirmPassword.Text = "pErMOOter4$6^5%"
         Me.txtConfirmPassword.UseSystemPasswordChar = True
         '
         'Label5
@@ -127,6 +132,7 @@ Partial Class frmConnectionFile
         Me.txtDatabase.Name = "txtDatabase"
         Me.txtDatabase.Size = New System.Drawing.Size(230, 22)
         Me.txtDatabase.TabIndex = 11
+        Me.txtDatabase.Text = "coffee2"
         '
         'Label6
         '

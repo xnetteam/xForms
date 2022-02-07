@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class frmFirstCompany
+Partial Class frmDeleteClient
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -23,8 +23,7 @@ Partial Class frmFirstCompany
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.txtShortName = New System.Windows.Forms.TextBox()
-        Me.btnCreate = New System.Windows.Forms.Button()
+        Me.txtID = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'Label1
@@ -32,48 +31,35 @@ Partial Class frmFirstCompany
         Me.Label1.AutoSize = True
         Me.Label1.Location = New System.Drawing.Point(12, 15)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(66, 13)
+        Me.Label1.Size = New System.Drawing.Size(51, 13)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Short name"
+        Me.Label1.Text = "Client ID"
         '
-        'txtShortName
+        'txtID
         '
-        Me.txtShortName.Location = New System.Drawing.Point(150, 12)
-        Me.txtShortName.Name = "txtShortName"
-        Me.txtShortName.Size = New System.Drawing.Size(200, 22)
-        Me.txtShortName.TabIndex = 1
+        Me.txtID.Location = New System.Drawing.Point(150, 12)
+        Me.txtID.Name = "txtID"
+        Me.txtID.ReadOnly = True
+        Me.txtID.Size = New System.Drawing.Size(200, 22)
+        Me.txtID.TabIndex = 1
         '
-        'btnCreate
-        '
-        Me.btnCreate.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnCreate.Location = New System.Drawing.Point(250, 61)
-        Me.btnCreate.Name = "btnCreate"
-        Me.btnCreate.Size = New System.Drawing.Size(100, 25)
-        Me.btnCreate.TabIndex = 4
-        Me.btnCreate.Text = "Create"
-        Me.btnCreate.UseVisualStyleBackColor = True
-        '
-        'frmFirstCompany
+        'frmDeleteClient
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(362, 98)
-        Me.Controls.Add(Me.btnCreate)
-        Me.Controls.Add(Me.txtShortName)
+        Me.ClientSize = New System.Drawing.Size(375, 218)
+        Me.Controls.Add(Me.txtID)
         Me.Controls.Add(Me.Label1)
         Me.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
-        Me.MaximizeBox = False
-        Me.MinimizeBox = False
-        Me.Name = "frmFirstCompany"
+        Me.Name = "frmDeleteClient"
         Me.ShowIcon = False
-        Me.Text = "First Company"
+        Me.Text = "Deletition of Client"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents Label1 As Label
-    Friend WithEvents txtShortName As TextBox
-    Friend WithEvents btnCreate As Button
+    Friend WithEvents txtID As TextBox
 End Class

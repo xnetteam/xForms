@@ -36,4 +36,15 @@
         End Try
         DialogResult = DialogResult.Yes
     End Sub
+
+    Private Sub KD(sender As Object, e As KeyEventArgs) Handles txtUsername.KeyDown, txtSurname.KeyDown, txtPassword.KeyDown, txtName.KeyDown, txtConfirm.KeyDown
+        Select Case e.KeyCode
+            Case Keys.Enter
+                e.SuppressKeyPress = True
+                SelectNextControl(sender, True, True, True, True)
+            Case Keys.Escape
+                e.SuppressKeyPress = True
+                DialogResult = DialogResult.Cancel
+        End Select
+    End Sub
 End Class
