@@ -54,7 +54,7 @@
       <HintPath>C:\VB Ready\MySql.Data.dll</HintPath>
     </Reference>
     <Reference Include="ReadyMySQL">
-      <HintPath>..\..\ReadyMySQL\ReadyMySQL\bin\Debug\netstandard2.0\ReadyMySQL.dll</HintPath>
+      <HintPath>..\..\..\ReadyMySQL.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
