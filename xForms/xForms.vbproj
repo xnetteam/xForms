@@ -102,6 +102,12 @@
     <Compile Include="Database\First Company.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Database\Maping.Designer.vb">
+      <DependentUpon>Maping.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Maping.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Files\Files.vb" />
     <Compile Include="Files\Connection File.Designer.vb">
       <DependentUpon>Connection File.vb</DependentUpon>
@@ -142,6 +148,9 @@
     <EmbeddedResource Include="Database\First Company.resx">
       <DependentUpon>First Company.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Database\Maping.resx">
+      <DependentUpon>Maping.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Files\Connection File.resx">
       <DependentUpon>Connection File.vb</DependentUpon>
     </EmbeddedResource>
@@ -167,6 +176,5 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
