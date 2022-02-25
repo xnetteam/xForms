@@ -24,9 +24,6 @@ Public Class Common
         Return Datum.ToString("dd.MM.yyyy")
     End Function
 
-    Public Shared Function TimeToSql(dt As Date) As String
-        Return (Format(dt, "yyyy-MM-dd HH:mm:ss"))
-    End Function
 
     Public Shared Sub LoadPrinters(cmb As ComboBox)
         cmb.Items.Clear()
@@ -37,17 +34,6 @@ Public Class Common
             End Try
         Next
     End Sub
-
-    Shared Function NowTimeSql() As String
-        Return Format(New Date(Now.Ticks), "yyyy-MM-dd HH:mm:ss")
-    End Function
-    Shared Function NowJustTimeSql() As String
-        Return Format(New Date(Now.Ticks), "HH:mm:ss")
-    End Function
-    Shared Function NowDateSQL() As String
-        Return Format(New Date(Now.Ticks), "yyyy-MM-dd")
-    End Function
-
 
 End Class
 
