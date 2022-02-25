@@ -49,6 +49,10 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2, Version=12.1.0.0, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\VB Ready\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
     <Reference Include="MySql.Data, Version=6.10.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>C:\VB Ready\MySql.Data.dll</HintPath>
@@ -89,6 +93,24 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Common.vb" />
+    <Compile Include="Common\Admin Zone.Designer.vb">
+      <DependentUpon>Admin Zone.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Admin Zone.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\Yes No.Designer.vb">
+      <DependentUpon>Yes No.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Yes No.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\Input String.Designer.vb">
+      <DependentUpon>Input String.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Input String.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Database\Database.vb" />
     <Compile Include="Database\First Admin.Designer.vb">
       <DependentUpon>First Admin.vb</DependentUpon>
@@ -142,6 +164,15 @@
     <EmbeddedResource Include="Clients\Delete Client.resx">
       <DependentUpon>Delete Client.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Common\Admin Zone.resx">
+      <DependentUpon>Admin Zone.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Yes No.resx">
+      <DependentUpon>Yes No.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\Input String.resx">
+      <DependentUpon>Input String.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Database\First Admin.resx">
       <DependentUpon>First Admin.vb</DependentUpon>
     </EmbeddedResource>
@@ -175,6 +206,15 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ban72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ok16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel16.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
