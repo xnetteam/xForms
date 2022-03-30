@@ -53,9 +53,6 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>C:\VB Ready\MySql.Data.dll</HintPath>
     </Reference>
-    <Reference Include="ReadyMySQL">
-      <HintPath>..\..\..\ReadyMySQL.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -81,6 +78,13 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Articles\Articles.vb" />
+    <Compile Include="Articles\Select Article.Designer.vb">
+      <DependentUpon>Select Article.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Articles\Select Article.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Clients\Clients.vb" />
     <Compile Include="Clients\Delete Client.Designer.vb">
       <DependentUpon>Delete Client.vb</DependentUpon>
@@ -139,6 +143,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Articles\Select Article.resx">
+      <DependentUpon>Select Article.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Clients\Delete Client.resx">
       <DependentUpon>Delete Client.vb</DependentUpon>
     </EmbeddedResource>
@@ -175,6 +182,12 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ReadyMySQL\ReadyMySQL.vbproj">
+      <Project>{af193b9b-6f80-463f-b74f-cf4c5df603fb}</Project>
+      <Name>ReadyMySQL</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
