@@ -35,20 +35,20 @@ Public Class Common
         Next
     End Sub
     Function VnesiString(Naslov As String) As String
-        Dim fr As New frmInputString
-        fr.lblNaslov.Text = Naslov
-        fr.ShowDialog()
-        If fr.DialogResult = DialogResult.Yes Then
-            Return fr.txt.Text
-        End If
-        Return ""
+        'Dim fr As New frmInputString
+        'fr.lblNaslov.Text = Naslov
+        'fr.ShowDialog()
+        'If fr.DialogResult = DialogResult.Yes Then
+        '    Return fr.txt.Text
+        'End If
+        'Return ""
     End Function
     Function PrasanjeDaNe(Title As String, Content As String) As DijalogRezultati
-        Dim fr As New frmYesNo
-        fr.lblTitle.Text = Title
-        fr.lblText.Text = Content
-        fr.ShowDialog()
-        Return fr.vrakam
+        'Dim fr As New frmYesNo
+        'fr.lblTitle.Text = Title
+        'fr.lblText.Text = Content
+        'fr.ShowDialog()
+        'Return fr.vrakam
     End Function
 End Class
 
